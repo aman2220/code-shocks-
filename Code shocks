@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc =new Scanner(System.in);
+		String val=sc.nextLine();
+		int number=Integer.parseInt(val);
+		int[]a=new int[number];
+		String val1=sc.nextLine();
+		String str[]=val1.split(" ");
+		for(int i=0;i<str.length;i++)
+		{
+			a[i]=Integer.parseInt(str[i]);
+		}
+		int count=0;
+		Arrays.sort(a);
+		for(int i=0;i<a.length-1;i++)
+		{
+			{
+
+				if(a[i]==a[i+1])
+					count ++;
+					i++;
+
+			}
+		}
+		System.out.println(count);
+	}
+}
+		
+		
+		
